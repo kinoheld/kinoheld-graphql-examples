@@ -1,0 +1,13 @@
+query {
+  cinemas (search: "Open Air", location: "München", distance: 25, limit: 10) {
+    name
+    street
+    city {
+      name
+    }
+    distance
+    detailUrl {
+      absoluteUrl
+    }
+  }
+}
