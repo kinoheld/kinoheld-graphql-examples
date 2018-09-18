@@ -1,0 +1,19 @@
+query {
+  shows (cinemaId: "{{cinemaId}}", date: "2018-09-18") {
+    name
+    beginning {
+      formatted
+    }
+    flags {
+      name
+    }
+    detailUrl {
+      absoluteUrl
+    }
+    movie {
+      genres {
+        name
+      }
+    }
+  }
+}
