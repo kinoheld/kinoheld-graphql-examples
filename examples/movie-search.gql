@@ -1,0 +1,18 @@
+query {
+  movies (search: "Avenger") {
+    title
+    description
+    additionalDescription
+    genres {
+      name
+    }
+    detailUrl {
+      absoluteUrl
+    }
+    thumb {
+      url {
+        absoluteUrl
+      }
+  	}
+  }
+}
