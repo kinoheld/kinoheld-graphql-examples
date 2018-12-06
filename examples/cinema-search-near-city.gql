@@ -1,5 +1,5 @@
-query {
-  cinemas (search: "Open Air", location: "München", distance: 25) {
+query CinemasNearCity ($search: String!, $location: String, $distance: Int = 25) {
+  cinemas (search: $search, location: $location, distance: $distance) {
     id
     name
     street
