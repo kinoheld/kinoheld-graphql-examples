@@ -1,5 +1,5 @@
-query {
-  shows (cinemaId: "{{cinemaId}}", date: "2018-09-18") {
+query GetShowsForDate ($cinemaId: ID!, $date: String! = "2018-09-18") {
+  shows (cinemaId: $cinemaId, date: $date) {
     name
     beginning {
       formatted
