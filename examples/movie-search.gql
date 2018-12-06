@@ -1,4 +1,4 @@
-query SearchMovies ($search: String! = "Avenger") {
+query SearchMovies ($search: String = "Avenger") {
   movies (search: $search) {
     title
     description
