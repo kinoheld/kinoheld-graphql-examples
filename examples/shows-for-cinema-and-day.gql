@@ -8,7 +8,7 @@ query GetShowsForDate ($cinemaId: ID!, $date: String! = "2018-09-18") {
       name
     }
     detailUrl {
-      absoluteUrl
+      url
     }
     movie {
       genres {
