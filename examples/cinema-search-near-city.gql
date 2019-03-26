@@ -8,7 +8,7 @@ query CinemasNearCity ($search: String!, $location: String, $distance: Int = 25)
     }
     distance
     detailUrl {
-      absoluteUrl
+      url
     }
   }
 }
