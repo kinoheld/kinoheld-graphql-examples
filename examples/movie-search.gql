@@ -7,12 +7,10 @@ query SearchMovies ($search: String = "Avenger") {
       name
     }
     detailUrl {
-      absoluteUrl
+      url
     }
     thumb {
-      url {
-        absoluteUrl
-      }
+      url
     }
   }
 }
